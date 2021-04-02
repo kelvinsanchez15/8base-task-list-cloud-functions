@@ -1,0 +1,7 @@
+functions:
+  UpdateCompletedTask:
+    type: webhook
+    handler:
+      code: src/webhooks/UpdateCompletedTask/handler.js
+    path: "tasks/{id}"
+    method: PUT
